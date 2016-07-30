@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seabg">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:elevation="8dp"
+        android:background="#B0CBFA">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:padding="20dp"
+            android:id="@+id/backbtn"
+            android:clickable="true"
+            android:src="@drawable/arrow"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingRight="35dp"
+            android:src="@drawable/title"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="60dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+            <RelativeLayout
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/day"
+                        android:id="@+id/rBtn_day"
+                        android:textColor="#e6e6fa"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/rBtn_month"
+                        android:layout_toStartOf="@+id/rBtn_month" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/month"
+                        android:id="@+id/rBtn_month"
+                        android:textColor="#e6e6fa"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/rBtn_day"
+                        android:layout_toEndOf="@+id/rBtn_day"
+                        android:layout_alignParentTop="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/year"
+                        android:id="@+id/rBtn_year"
+                        android:textColor="#e6e6fa"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/rBtn_month"
+                        android:layout_toEndOf="@+id/rBtn_month" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#ffebcd"
+                android:id="@+id/txt_sum" />
+
+            <ListView
+                android:id="@+id/list_message"
+                android:layout_height="290dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.94">
+            </ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:scaleType = "fitXY"
+                    android:text="New Button"
+                    android:id="@+id/btn_setting"
+                    android:src="@drawable/settingbutton"
+                    android:clickable="true"
+                    android:background="@null"
+                    android:layout_marginBottom="56dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:scaleType = "fitXY"
+                    android:text="New Button"
+                    android:id="@+id/btn_text"
+                    android:src="@drawable/textbutton"
+                    android:clickable="true"
+                    android:background="@null"
+                    android:layout_marginBottom="56dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:scaleType = "fitXY"
+                    android:text="New Button"
+                    android:id="@+id/btn_qr"
+                    android:src="@drawable/camerabutton"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

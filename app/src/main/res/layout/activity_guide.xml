@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#4682B4">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/plan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#e6e6fa"
+            android:text="@string/guide_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/whale2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#e6e6fa"
+            android:text="@string/guide_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/progress" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#e6e6fa"
+            android:text="@string/guide_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/budgetbtn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#e6e6fa"
+            android:text="@string/guide_4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/chargelistbtn3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#e6e6fa"
+            android:text="@string/guide_5" />
+    </LinearLayout>
+</LinearLayout>

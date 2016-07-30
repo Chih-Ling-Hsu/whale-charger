@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Whale Charger</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="defaultplan">No charging plan in process.</string>
+    <string name="defaultduration">Hi there, nice to meet you.</string>
+    <string name="confirm">confirm</string>
+    <string name="action_settings">Settings</string>
+    <string name="list">我要記帳!</string>
+    <string name="item">item</string>
+    <string name="price">price</string>
+    <string name="category">category</string>
+    <string name="date">date</string>
+    <string name="title_activity_goal">Goal</string>
+    <string name="goal_page">total expenditure</string>
+    <string name="danger_page">danger index</string>
+    <string name="goal_label">Goal</string>
+    <string name="history_label">History</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_post_message">Add An Expense</string>
+    <string name="title_activity_post_expectedmsg">Add A Future Expense</string>
+    <string name="typem">$ budget</string>
+    <string name="selectunit">Click to select day/week/month</string>
+    <string name="typenumber">for how many day(s) ?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">remove this expense</string>
+    <string name="title_activity_item">Modify An Expense</string>
+    <string name="year">this year</string>
+    <string name="month">this month</string>
+    <string name="day">today</string>
+    <string name="fixed_expenses">Future Expenses</string>
+    <string name="category_setting">Define Categories</string>
+    <string name="alarm">Alarm</string>
+    <string name="alarmmid">:</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="alarmMode">Alarm Mode</string>
+    <string name="vibration">Vibration</string>
+    <string name="goal_content">NONE</string>
+    <string name="start">Start app!</string>
+    <string name="data_search">Searching</string>
+    <string name="yourgoal">your goal</string>
+    <string name="day_unit">day</string>
+    <string name="month_unit">mon</string>
+    <string name="year_unit">year</string>
+    <string name="search_type_1">item</string>
+    <string name="search_type_2">category</string>
+    <string name="guide_1">This dialog shows your charging plan.</string>
+    <string name="guide_2">Click to interact with it. Its mood depends on how frequent you use this app.</string>
+    <string name="guide_3">The dark green part and the green part together shows how much you have spent so far, while the green part only shows your expenditure today.</string>
+    <string name="guide_4">Click this button to set your charging plan.</string>
+    <string name="guide_5">Click this button to keep the accounts.</string>
+
+</resources>

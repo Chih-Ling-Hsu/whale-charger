@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seabg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:elevation="8dp"
+        android:background="#B0CBFA">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:padding="20dp"
+            android:id="@+id/backbtn"
+            android:clickable="true"
+            android:src="@drawable/arrow"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingRight="35dp"
+            android:src="@drawable/title"/>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:id="@+id/expectedexpenses"
+            android:background="@drawable/round_corners"
+            android:text="@string/fixed_expenses"
+            android:textSize="3mm"
+            android:gravity="left"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/expectedexpenses"
+            android:layout_alignTop="@id/expectedexpenses"
+            android:layout_margin="15dp"
+            android:src="@drawable/arrow_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:gravity="left"
+            android:id="@+id/alarm"
+            android:background="@drawable/round_corners"
+            android:text="@string/alarm"
+            android:textSize="3mm"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/alarm"
+            android:layout_alignTop="@id/alarm"
+            android:layout_margin="15dp"
+            android:src="@drawable/arrow_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:gravity="left"
+            android:id="@+id/datasearch"
+            android:background="@drawable/round_corners"
+            android:text="@string/data_search"
+            android:textSize="3mm"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/datasearch"
+            android:layout_alignTop="@id/datasearch"
+            android:layout_margin="15dp"
+            android:src="@drawable/arrow_right"/>
+    </RelativeLayout>
+</LinearLayout>
