@@ -210,18 +210,22 @@ public class MainActivity extends Activity {
                 int last_duration = 1;
                 if (messageDAO.getCount(MainActivity.this)!=0) {
                     message = messageDAO.getLastMessage(MainActivity.this);
-                    last_message.set(message.getYear(), message.getMonth(), message.getDay());
+                    last_message.set(message.getYear(), message.getMonth()-1, message.getDay());
                     last_duration = today.get(Calendar.DAY_OF_YEAR) - last_message.get(Calendar.DAY_OF_YEAR) - 1;
                 }
                 if (last_duration != 0) {
-                    whaleMode = whaleMode - last_duration >= 0 ? whaleMode - last_duration : 0;
-                    editor.putInt("whaleMode", whaleMode);
-                    editor.commit();
+                    whaleMode = whaleMode-last_duration;
                 } else {
-                    if (whaleMode < 4) whaleMode = whaleMode + 1;
-                    editor.putInt("whaleMode", whaleMode);
-                    editor.commit();
+                    whaleMode = whaleMode + 1;
                 }
+                if (whaleMode>4){
+                    whaleMode = 4;
+                }
+                else if (whaleMode<0){
+                    whaleMode = 0;
+                }
+                editor.putInt("whaleMode", whaleMode);
+                editor.commit();
             }
 
             editor.putString("lastLogin", date_now);

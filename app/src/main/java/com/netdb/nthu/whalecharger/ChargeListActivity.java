@@ -278,7 +278,7 @@ public class ChargeListActivity extends Activity {
                 for(int i=0;i<(parsed_1.length-5)/3;i++) {
                     message = new Message();
                     message.setItem(parsed_1[5+i*3]);
-                    message.setPrice(Integer.valueOf(parsed_1[5+i*3+2].trim()));
+                    message.setPrice(Integer.valueOf(parsed_1[5+i*3+2].trim())*Integer.valueOf(parsed_1[5+i*3+1].trim()));
                     messages.add(message);
                     haveData=1;
                 }
@@ -296,7 +296,7 @@ public class ChargeListActivity extends Activity {
                     if(parsed_1[offset + 3*i].equals("")) continue;
                     message = new Message();
                     message.setItem(parsed_1[offset + 3*i]);
-                    message.setPrice(Integer.valueOf(parsed_1[offset + 3*i + 2].trim()));
+                    message.setPrice(Integer.valueOf(parsed_1[offset + 3*i + 2].trim())*Integer.valueOf(parsed_1[offset + 3*i + 1].trim()));
                     messages.add(message);
                     haveData=1;
                 }
