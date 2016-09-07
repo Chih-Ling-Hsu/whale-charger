@@ -266,7 +266,7 @@ public class MainActivity extends Activity {
                 e.printStackTrace();
             }
             int remain_duration = cal_end.get(Calendar.DAY_OF_YEAR) - today.get(Calendar.DAY_OF_YEAR);
-            if (remain_duration<0 || cal_origin.get(Calendar.DAY_OF_YEAR) > today.get(Calendar.DAY_OF_YEAR)){
+            if (remain_duration<=0 || cal_origin.get(Calendar.DAY_OF_YEAR) > today.get(Calendar.DAY_OF_YEAR)){
                 budgetView.setText("No charging plan in process.");
                 durationView.setText("Hi there, nice to meet you.");
                 remainView.setText("");
