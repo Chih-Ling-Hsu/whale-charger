@@ -229,6 +229,33 @@ public class ChargeListActivity extends Activity {
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        // Always call the superclass method first
+
+        // Set messages to the list view
+        messageDAO = new MessageDAO();
+        messageDAO.removeALLMessage(ChargeListActivity.this);
+        mMessageList = messageDAO.getAllMessages(ChargeListActivity.this,DAY);
+        price=0;
+        for(int i=0;i<mMessageList.size();i++){
+            price+=mMessageList.get(i).getPrice();
+        }
+        sumTxt.setText("Total Expenditure: $"+price);
+        Collections.sort(mMessageList, new Comparator<Message>() {
+            public int compare(Message a, Message b) {
+                if (a.getId() >= b.getId()) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            }
+        });
+        mMessageAdapter = new MessageAdapter(this, mMessageList);
+        mListView.setAdapter(mMessageAdapter);
+    }
+
     private void updateMessageList(int mode){
         messageDAO = new MessageDAO();
         Message message;
