@@ -4,7 +4,7 @@
 
 WhaleCharger¬O¤@´Ú¬°¾Ç¥Í³]­pªº°O±bAPP¡A´¬±ó½ÆÂøªº¦¬¤ä¥X¾Þ§@¡A¥H¡u¹wºâ¡vªº³]©w¬°¾É¦V¡AÀ°§A­pºâ®Ú¾Ú§A¥Ø«e³Ñ¤Uªº¹wºâ¡A§A¥­§¡¨C¤ÑÁÙ¥i¥Hªá¦h¤Ö¿ú¡C°£¤F°O±b¡AWhaleChargerÁÙ´£¨Ñ©w®É´£¿ô¡B¶µ¥Ø·j´Mµ¥¥\¯à¡C¦Ó¥B¡A¥D­¶ªºÄH³½¥i¥H¤¬°Ê¡A¥Lªº¤ß±¡·|»P§A°O±bªºÀW²v¦³Ãö¡C
 
-## Main Page:
+## Main Page
 - Show your charging plan.
 - Show how much budget you can spend and how much you have spent..
 ![Alt text](/screenshots/usage1.png)
@@ -12,11 +12,12 @@ WhaleCharger¬O¤@´Ú¬°¾Ç¥Í³]­pªº°O±bAPP¡A´¬±ó½ÆÂøªº¦¬¤ä¥X¾Þ§@¡A¥H¡u¹wºâ¡vªº³]©w¬°¾
 - The whale's mood depends on how often you use this app to keep accounts.
 ![Alt text](/screenshots/usage2.png)
 
-## Charging List:
+## Charging List
 - You can keep your accounts by scanning QR Codes.
 - You can also add or modify an expense manually.
 ![Alt text](/screenshots/usage3.png)
-## Other functions:
+
+## Other function
 - You can set up future expenses, which will add into your charge list by date you set.
 - You can set up an alarm clock for reminding yourself of keeping your accounts.
 - You can also search any expenses by name or category.
