@@ -142,7 +142,7 @@ public class MainActivity extends Activity {
 
             anim.stop();
             Resources resf = getResources();
-            int animId = animSet[whaleMode];
+            int animId = animSet[2];
             anim = (AnimationDrawable)resf.getDrawable(animId);
             whaleView.setImageDrawable(anim);
             anim.start();
